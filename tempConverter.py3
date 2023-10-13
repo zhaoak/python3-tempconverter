@@ -5,7 +5,7 @@ import sys
 
 # check for adequate number of args
 if len(sys.argv) != 3:
-    print('Usage: python3 tempConverter.py3 [outputTempScale] [temperature] \noutputTempScale should be C for celsius, K for Kelvin, or F for Farenheit (case insensitive)')
+    print('Usage: python3 tempConverter.py3 [outputTempScale] [temperature] \noutputTempScale should be C for celsius, K for Kelvin, or F for Fahrenheit (case insensitive)')
     quit()
 
 # load args into dictionary
@@ -13,7 +13,7 @@ args = { 'outputTempScale': sys.argv[1], 'inputTemp': sys.argv[2] }
 
 # check if args are properly formatted and of correct types
 if sys.argv[1].upper() != 'C' and sys.argv[1].upper() != 'F' and sys.argv[1].upper() != 'K':
-    print('Usage: python3 tempConverter.py3 [outputTempScale] [temperature] \noutputTempScale should be C for celsius, K for Kelvin, or F for Farenheit (case insensitive)')
+    print('Usage: python3 tempConverter.py3 [outputTempScale] [temperature] \noutputTempScale should be C for celsius, K for Kelvin, or F for Fahrenheit (case insensitive)')
     quit()
 
 try:
@@ -44,11 +44,11 @@ def farenheitToKelvin(temp):
 # convert and print output values
 match args['outputTempScale'].upper():
     case 'C':
-        print(str(args['inputTemp']) + ' Farenheit -> Celsius: ' + str(farenheitToCelsius(args['inputTemp'])) + ' C')
+        print(str(args['inputTemp']) + ' Fahrenheit -> Celsius: ' + str(farenheitToCelsius(args['inputTemp'])) + ' C')
         print(str(args['inputTemp']) + ' Kelvin -> Celsius: ' + str(kelvinToCelsius(args['inputTemp'])) + ' C') 
     case 'F':
-        print(str(args['inputTemp']) + ' Celsius -> Farenheit: ' + str(celsiusToFarenheit(args['inputTemp'])) + ' F')
-        print(str(args['inputTemp']) + ' Kelvin -> Farenheit: ' + str(kelvinToFarenheit(args['inputTemp'])) + ' F')
+        print(str(args['inputTemp']) + ' Celsius -> Fahrenheit: ' + str(celsiusToFarenheit(args['inputTemp'])) + ' F')
+        print(str(args['inputTemp']) + ' Kelvin -> Fahrenheit: ' + str(kelvinToFarenheit(args['inputTemp'])) + ' F')
     case 'K':
         print(str(args['inputTemp']) + ' Celsius -> Kelvin: ' + str(celsiusToKelvin(args['inputTemp'])) + ' K')
-        print(str(args['inputTemp']) + ' Farenheit -> Kelvin: ' + str(farenheitToKelvin(args['inputTemp'])) + ' K')
+        print(str(args['inputTemp']) + ' Fahrenheit -> Kelvin: ' + str(farenheitToKelvin(args['inputTemp'])) + ' K')
