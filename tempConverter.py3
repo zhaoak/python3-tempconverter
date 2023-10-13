@@ -47,5 +47,8 @@ match args['outputTempScale'].upper():
         print(str(args['inputTemp']) + ' Farenheit -> Celsius: ' + str(farenheitToCelsius(args['inputTemp'])) + ' C')
         print(str(args['inputTemp']) + ' Kelvin -> Celsius: ' + str(kelvinToCelsius(args['inputTemp'])) + ' C') 
     case 'F':
-        print(str(args['inputTemp']) + ' Farenheit -> Celsius: ' + str(farenheitToCelsius(args['inputTemp'])) + ' C')
-        print(str(args['inputTemp']) + ' Kelvin -> Celsius: ' + str(kelvinToCelsius(args['inputTemp'])) + ' C') 
+        print(str(args['inputTemp']) + ' Celsius -> Farenheit: ' + str(celsiusToFarenheit(args['inputTemp'])) + ' F')
+        print(str(args['inputTemp']) + ' Kelvin -> Farenheit: ' + str(kelvinToFarenheit(args['inputTemp'])) + ' F')
+    case 'K':
+        print(str(args['inputTemp']) + ' Celsius -> Kelvin: ' + str(celsiusToKelvin(args['inputTemp'])) + ' K')
+        print(str(args['inputTemp']) + ' Farenheit -> Kelvin: ' + str(farenheitToKelvin(args['inputTemp'])) + ' K')
