@@ -6,7 +6,7 @@ simple Python 3.11 application for converting temps to/from Farenheit/Celsius/Ke
 
 Ensure you have a Python3 interpreter installed.
 
-In the directory where the `tempConverter.py3` file is, run
+In the directory where the `tempConverter.py3` file is, run in your terminal:
 
 `python3 tempConverter.py3 {outputScale} {inputTemp}`
 
